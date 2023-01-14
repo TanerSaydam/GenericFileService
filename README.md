@@ -9,18 +9,44 @@ dotnet add package GenericFileService --version 1.0.0
 ```
 
 ## Usage
+Parameters
 ```Cshar
 
-FileSaveToFtpModel fileSaveToFtpModel = new("ftp.ftpadresiniz.com","userName", "password");
-string path = "./Files/" + "Dosya adı"
+
 ```
 
+If you want to save file in server
 ```Csharp
+string filePath = "./Files/";
+
 string fileName = FileService.FileSaveToServer(file,filePath);
+```
+
+If you want to save file in Ftp
+```Csharp
+FileSaveToFtpModel fileSaveToFtpModel = new("ftp.ftpadresiniz.com","userName", "password");
+
 string fileName = FileService.FileSaveToFtp(file,fileSaveToFtpModel);
+```
+
+If you want to save file in Database (byte[])
+```Csharp
 byte[] fileByeArray = FileService.FileConvertByteArrayToDatabase(file);
+```
+
+If you want to delete file in server
+```Csharp
+string path = "./Files/" + "FileName";
+
 FileService.FileDeleteToServer(path);
-FileService.FileDeleteToFtp(fileSaveToFtpModel);
+```
+
+If you want to delete file in ftp
+```Csharp
+FileSaveToFtpModel fileSaveToFtpModel = new("ftp.ftpadresiniz.com","userName", "password");
+string path = "./Files/" + "FileName";
+
+FileService.FileDeleteToFtp(path,fileSaveToFtpModel);
 ```
 
 ## Method and Class
