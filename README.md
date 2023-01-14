@@ -1,4 +1,12 @@
-## Instalition
+# Dependency
+
+This library was created by .Net 7.0
+
+## Install
+
+```bash
+dotnet add package GenericFileService --version 1.0.0
+```
 
 ## Usage
 ```Cshar
