@@ -9,12 +9,6 @@ dotnet add package GenericFileService --version 1.0.0
 ```
 
 ## Usage
-Parameters
-```Cshar
-
-
-```
-
 If you want to save file in server
 ```Csharp
 string filePath = "./Files/";
