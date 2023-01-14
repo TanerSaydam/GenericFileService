@@ -8,8 +8,24 @@
     <Company>Taner Saydam</Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
+    <PackageIcon>Files-icon.png</PackageIcon>
+    <Title>Generic File Save And Delete Methods</Title>
+    <Description>With this package you can save, delete or convert your files.</Description>
+    <Copyright>Copyright 2023</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TanerSaydam/GenericFileService</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>fileservice</PackageTags>
+    <PackageReleaseNotes>Fixed Readme file.</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Users\taner\OneDrive\Masaüstü\Files-icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
