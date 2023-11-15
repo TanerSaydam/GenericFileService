@@ -1,11 +1,11 @@
 # Dependency
 
-This library was created by .Net 7.0
+This library was created by .Net 8.0
 
 ## Install
 
 ```bash
-dotnet add package GenericFileService --version 1.0.3
+dotnet add package GenericFileService
 ```
 
 ## Usage
